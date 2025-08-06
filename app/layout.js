@@ -12,21 +12,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "ClientFlow - Client Management Made Simple",
+  title: "ClientPortal OS - Client Management Made Simple",
   description: "One platform for invoices, file sharing, contracts, and client communication. Stop juggling multiple tools and start focusing on what matters. Join the waitlist for early access.",
   keywords: "client management, invoicing, file sharing, contracts, freelancer tools, agency software, payment reminders, project tracking",
-  authors: [{ name: "ClientFlow Team" }],
-  creator: "ClientFlow",
-  publisher: "ClientFlow",
+  authors: [{ name: "ClientPortal OS Team" }],
+  creator: "ClientPortal OS",
+  publisher: "ClientPortal OS",
   openGraph: {
-    title: "ClientFlow - Client Management Made Simple",
+    title: "ClientPortal OS - Client Management Made Simple",
     description: "One platform for invoices, file sharing, contracts, and client communication. Join the waitlist for early access.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClientFlow - Client Management Made Simple",
+    title: "ClientPortal OS - Client Management Made Simple",
     description: "One platform for invoices, file sharing, contracts, and client communication. Join the waitlist for early access.",
   },
   robots: {
