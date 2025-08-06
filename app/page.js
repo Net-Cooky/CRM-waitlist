@@ -160,7 +160,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative px-6 pt-20 pb-16 overflow-hidden">
+      <section className="relative px-4 sm:px-6 pt-16 sm:pt-20 pb-12 sm:pb-16 overflow-hidden">
         {/* Hero Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute -top-20 -right-20 w-96 h-96 bg-blue-500/30 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -173,36 +173,36 @@ export default function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto text-center">
           <div className="mb-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               Client Management
               <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Made Simple
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed px-2">
               One platform for invoices, file sharing, contracts, and client communication. 
               Stop juggling multiple tools and start focusing on what matters.
             </p>
           </div>
 
           {/* Email Signup Form */}
-          <div className="max-w-xl mx-auto mb-12">
+          <div className="max-w-xl mx-auto mb-8 sm:mb-12 px-4">
             {!isSubmitted ? (
               <div>
-                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <input
                     type="email"
                     placeholder="Enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     disabled={isLoading}
-                    className="flex-1 px-6 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex-1 px-4 sm:px-6 py-3 sm:py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
                     required
                   />
                   <button
                     type="submit"
                     disabled={isLoading}
-                    className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-sm sm:text-base whitespace-nowrap"
                   >
                     {isLoading ? (
                       <div className="flex items-center">
@@ -229,9 +229,9 @@ export default function Home() {
           </div>
 
           {/* Value Proposition */}
-          <div className="text-slate-400">
-            <p className="mb-6 text-lg">Built by freelancers, for freelancers</p>
-            <div className="flex justify-center space-x-8 text-sm">
+          <div className="text-slate-400 px-4">
+            <p className="mb-4 sm:mb-6 text-base sm:text-lg">Built by freelancers, for freelancers</p>
+            <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-8 space-y-2 sm:space-y-0 text-xs sm:text-sm">
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
                 Launch discount available
@@ -250,29 +250,29 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section id="problem" className="relative z-10 px-6 py-20 bg-slate-800/30 backdrop-blur-sm">
+      <section id="problem" className="relative z-10 px-4 sm:px-6 py-12 sm:py-20 bg-slate-800/30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <div className="text-center mb-8 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
               Sound familiar?
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto px-4">
               Most service providers juggle multiple tools, leading to chaos and lost opportunities
             </p>
           </div>
 
           {/* Problem Scenarios */}
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-8 sm:mb-16">
             {/* Scenario 1 */}
-            <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 backdrop-blur-sm rounded-3xl p-8 border border-red-500/20">
-              <div className="flex items-start space-x-4 mb-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-                  <Frown className="w-6 h-6 text-red-400" />
+            <div className="bg-gradient-to-br from-red-500/10 to-orange-500/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-red-500/20">
+              <div className="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+                  <Frown className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">The Daily Struggle</h3>
-                  <p className="text-slate-300">"Where did I put that contract? Did they pay the invoice? I need to follow up on three projects..."</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">The Daily Struggle</h3>
+                  <p className="text-sm sm:text-base text-slate-300">"Where did I put that contract? Did they pay the invoice? I need to follow up on three projects..."</p>
                 </div>
               </div>
               
@@ -293,18 +293,18 @@ export default function Home() {
             </div>
 
             {/* Scenario 2 */}
-            <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 backdrop-blur-sm rounded-3xl p-8 border border-yellow-500/20">
-              <div className="flex items-start space-x-4 mb-6">
-                <div className="flex-shrink-0 w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
-                  <Users className="w-6 h-6 text-yellow-400" />
+            <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-yellow-500/20">
+              <div className="flex items-start space-x-3 sm:space-x-4 mb-4 sm:mb-6">
+                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
+                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-400" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">Tool Overload</h3>
-                  <p className="text-slate-300">Switching between 5+ different apps just to manage one client relationship</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2">Tool Overload</h3>
+                  <p className="text-sm sm:text-base text-slate-300">Switching between 5+ different apps just to manage one client relationship</p>
                 </div>
               </div>
               
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
                 {[
                   { name: 'Gmail', icon: Mail, color: 'bg-blue-500/20' },
                   { name: 'Dropbox', icon: FolderOpen, color: 'bg-blue-600/20' },
@@ -315,9 +315,9 @@ export default function Home() {
                 ].map((tool, index) => {
                   const IconComponent = tool.icon;
                   return (
-                    <div key={index} className={`${tool.color} rounded-lg p-3 text-center border border-white/10`}>
+                    <div key={index} className={`${tool.color} rounded-lg p-2 sm:p-3 text-center border border-white/10`}>
                       <div className="flex justify-center mb-1">
-                        <IconComponent className="w-4 h-4 text-slate-300" />
+                        <IconComponent className="w-3 h-3 sm:w-4 sm:h-4 text-slate-300" />
                       </div>
                       <div className="text-xs text-slate-300">{tool.name}</div>
                     </div>
@@ -335,28 +335,28 @@ export default function Home() {
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
             </div>
             
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm rounded-3xl p-12 border border-blue-500/20 relative overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border border-blue-500/20 relative overflow-hidden">
               {/* Background decoration */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 opacity-50"></div>
               <div className="absolute top-4 right-4 w-20 h-20 bg-blue-400/10 rounded-full blur-xl"></div>
               <div className="absolute bottom-4 left-4 w-16 h-16 bg-purple-400/10 rounded-full blur-xl"></div>
               
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-6">
-                  <Sparkles className="w-8 h-8 text-white" />
+                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-4 sm:mb-6">
+                  <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                 </div>
                 
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4">
                   <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                     What if there was a better way?
                   </span>
                 </h3>
                 
-                <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-6 sm:mb-8 px-4">
                   One platform that brings together everything you need to manage clients professionally and efficiently.
                 </p>
                 
-                <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
                   {[
                     { icon: Target, title: 'Centralized', desc: 'All client data in one place' },
                     { icon: Zap, title: 'Automated', desc: 'Smart reminders and workflows' },
@@ -365,8 +365,8 @@ export default function Home() {
                     const IconComponent = benefit.icon;
                     return (
                       <div key={index} className="text-center">
-                        <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-xl mb-3">
-                          <IconComponent className="w-6 h-6 text-white" />
+                        <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-xl mb-2 sm:mb-3">
+                          <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                         </div>
                         <h4 className="text-white font-semibold mb-2">{benefit.title}</h4>
                         <p className="text-slate-400 text-sm">{benefit.desc}</p>
@@ -381,25 +381,25 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="relative z-10 px-6 py-20 bg-slate-900/50 backdrop-blur-sm">
+      <section id="features" className="relative z-10 px-4 sm:px-6 py-12 sm:py-20 bg-slate-900/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-6">
-              <Zap className="w-8 h-8 text-white" />
+          <div className="text-center mb-12 sm:mb-20">
+            <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-4 sm:mb-6">
+              <Zap className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Powerful Features
               </span>
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto px-4">
               Everything you need to manage clients like a pro. No more juggling tools or missing deadlines.
             </p>
           </div>
 
           {/* Features Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {[
               {
                 icon: FolderOpen,
@@ -524,22 +524,22 @@ export default function Home() {
       </section>
 
       {/* Target Audience Section */}
-      <section id="audience" className="relative z-10 px-6 py-20 bg-slate-800/20 backdrop-blur-sm">
+      <section id="audience" className="relative z-10 px-4 sm:px-6 py-12 sm:py-20 bg-slate-800/20 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <div className="text-center mb-12 sm:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
                 Built for Professionals
               </span>
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Whether you're a solo creator or growing team, ClientPortal OS adapts to your workflow
+            <p className="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto px-4">
+              Whether you're a solo creator or growing team, ClientFlow adapts to your workflow
             </p>
           </div>
 
           {/* Audience Cards */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
             {[
               {
                 icon: Palette,
@@ -652,16 +652,16 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="relative z-10 px-6 py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <section className="relative z-10 px-4 sm:px-6 py-12 sm:py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <div className="max-w-6xl mx-auto">
           {/* Background Elements */}
-          <div className="absolute inset-0 overflow-hidden rounded-3xl">
+          <div className="absolute inset-0 overflow-hidden rounded-2xl sm:rounded-3xl">
             <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
           </div>
           
           <div className="relative z-10 text-center">
-            <div className="bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-3xl p-16 border border-blue-500/20 relative overflow-hidden">
+            <div className="bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-12 lg:p-16 border border-blue-500/20 relative overflow-hidden">
               {/* Enhanced background decoration */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 opacity-50"></div>
               <div className="absolute top-8 right-8 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
@@ -670,11 +670,11 @@ export default function Home() {
               
               <div className="relative z-10">
                 {/* Icon */}
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl mb-8 animate-pulse-glow">
-                  <Rocket className="w-10 h-10 text-white" />
+                <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-3xl mb-6 sm:mb-8 animate-pulse-glow">
+                  <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
                 </div>
                 
-                <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight">
                   <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                     Ready to Transform
                   </span>
@@ -682,7 +682,7 @@ export default function Home() {
                   <span className="text-white">Your Business?</span>
                 </h2>
                 
-                <p className="text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4">
                   Join the waitlist and be among the first to experience the future of client management.
                 </p>
                 
