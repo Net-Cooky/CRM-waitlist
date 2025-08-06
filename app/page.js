@@ -99,7 +99,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold text-white">
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              ClientFlow
+              ClientPortal OS
             </span>
           </div>
           
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
 
           {/* Email Signup Form */}
-          <div className="max-w-md mx-auto mb-12">
+          <div className="max-w-xl mx-auto mb-12">
             {!isSubmitted ? (
               <div>
                 <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
@@ -223,7 +223,7 @@ export default function Home() {
             ) : (
               <div className="bg-green-500/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-6">
                 <div className="text-green-400 font-semibold mb-2">✓ You're on the list!</div>
-                <p className="text-slate-300">We'll notify you when ClientFlow launches.</p>
+                <p className="text-slate-300">We'll notify you when ClientPortal OS launches.</p>
               </div>
             )}
           </div>
@@ -528,16 +528,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-20">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl mb-6">
-              <Target className="w-8 h-8 text-white" />
-            </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
               <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
                 Built for Professionals
               </span>
             </h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Whether you're a solo creator or growing team, ClientFlow adapts to your workflow
+              Whether you're a solo creator or growing team, ClientPortal OS adapts to your workflow
             </p>
           </div>
 
@@ -613,7 +610,7 @@ export default function Home() {
           {/* Founder Story */}
           <div id="story" className="text-center">
             <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm rounded-3xl p-12 border border-slate-600/30 max-w-4xl mx-auto">
-              <h3 className="text-3xl font-bold text-white mb-8">Why I'm Building ClientFlow</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">Why I'm Building ClientPortal OS</h3>
               
               <div className="max-w-2xl mx-auto mb-8">
                 <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -621,7 +618,7 @@ export default function Home() {
                   Switching between email, invoicing apps, file storage, and project trackers was killing my productivity.
                 </p>
                 <p className="text-slate-300 text-lg leading-relaxed">
-                  ClientFlow brings everything into one beautiful, simple platform. No more context switching, 
+                  ClientPortal OS brings everything into one beautiful, simple platform. No more context switching, 
                   no more missed deadlines, no more unprofessional client experiences.
                 </p>
               </div>
@@ -756,7 +753,7 @@ export default function Home() {
                         <CheckCircle className="w-16 h-16 text-green-400" />
                       </div>
                       <div className="text-green-400 font-bold text-2xl mb-4">Welcome to the future!</div>
-                      <p className="text-slate-300 text-lg">You're officially on the ClientFlow waitlist. We'll notify you as soon as we launch with your exclusive early access details.</p>
+                      <p className="text-slate-300 text-lg">You're officially on the ClientPortal OS waitlist. We'll notify you as soon as we launch with your exclusive early access details.</p>
                     </div>
                   </div>
                 )}
@@ -785,7 +782,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="relative z-10 px-6 py-12 border-t border-slate-700/50">
         <div className="text-center text-slate-500">
-          <p>&copy; {new Date().getFullYear()} ClientFlow. All rights reserved. Made with ❤️ for service providers.</p>
+          <p>&copy; {new Date().getFullYear()} ClientPortal OS. All rights reserved. Made with ❤️ for service providers.</p>
         </div>
       </footer>
     </div>
